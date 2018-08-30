@@ -1,3 +1,6 @@
+.DS_Store
+config_bitflyer.json
+
 # Logs
 logs
 *.log
