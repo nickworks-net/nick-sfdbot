@@ -27,12 +27,12 @@ fxbtc_trader.update_all(function(){
 	 * 最終取引価格を取得.
 	*/
 	var btc_last_price = 0;
-	btc_trader.executionsTickerStream(function( data ){
+	btc_trader.tickerStream(function( data ){
 		btc_last_price = parseInt(data.message.ltp); // 現物最終取引価格.
 		_check_and_trade();
 	});
 	var fx_last_price = 0;
-	fxbtc_trader.executionsTickerStream(function( data ){
+	fxbtc_trader.tickerStream(function( data ){
 		// 4.9999％になる価格と5％になる価格を取りたい.
 		// 乖離が5%になる価格が取れればOKなはず.
 		fx_last_price = parseInt(data.message.ltp);
