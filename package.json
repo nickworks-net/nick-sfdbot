@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/nickworks-net/sfdbot#readme",
   "dependencies": {
-    "pubnub": "^4.21.5",
+    "pubnub": "^4.37.0",
     "request": "^2.88.0",
     "rpc-websockets": "^4.4.0"
   }
